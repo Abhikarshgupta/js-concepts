@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Numbered List</title>
+	</head>
+	<body>
+		<header style="color: black; padding: 1rem; font-size: 32px">
+			Create a Numbered List/Note
+		</header>
+		<div>
+			<summary>
+				This is a website that duplicates the numbered list functionality of
+				Sticky Notes/Gmail/Word
+			</summary>
+			<summary>
+				The list has auto numbering, auto alignment adjustment, ability to copy
+				to cliboard on click of button
+			</summary>
+			<summary>
+				Data is stored in local storage to preserve against reloads. Current
+				support is for a single list
+			</summary>
+		</div>
+		<div id="parentDiv">
+			<label for="listInput" style="padding: 1rem">Enter/Edit your list</label>
+			<div id="listInput" contenteditable="true" data-value=""></div>
+			<div id="buttonDiv">
+				<button onclick="handleCopyBtnClick()">Copy To Clipboard</button>
+				<button
+					onclick="handleGenereateListBtnClick()"
+					style="margin-left: 1rem"
+				>
+					Save List
+				</button>
+			</div>
+			<div id="sampleOut"></div>
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>

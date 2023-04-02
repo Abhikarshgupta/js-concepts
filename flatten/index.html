@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flatten Array</title>
+	</head>
+	<body>
+		<h1>Flatten array</h1>
+		<div style="margin-top: 50px">Choose an Input Array from the list</div>
+		<div style="display: flex; flex-direction: column; align-items: flex-start">
+			<div>
+				<input type="radio" id="array1" value="arraylabel1" name="arrayRadio" />
+				<label for="array1" id="arraylabel1">Array1</label>
+			</div>
+			<div>
+				<input type="radio" id="array2" value="arraylabel2" name="arrayRadio" />
+				<label for="array2" id="arraylabel2">array2</label>
+			</div>
+			<div>
+				<input type="radio" id="array3" value="arraylabel3" name="arrayRadio" />
+				<label for="array3" id="arraylabel3">array3</label>
+			</div>
+			<div>
+				<input type="radio" id="array4" value="arraylabel4" name="arrayRadio" />
+				<label for="array4" id="arraylabel4">array4</label>
+			</div>
+			<div>
+				<input type="radio" id="array5" value="arraylabel5" name="arrayRadio" />
+				<label for="array5" id="arraylabel5">array5</label>
+			</div>
+		</div>
+		<div style="margin-top: 10px; margin-bottom: 10px">
+			Enter the depth upto which to flatten
+		</div>
+		<input id="depthInput" placeholder="Enter depth" type="number" />
+		<button id="flattenButton" onclick="handleFlattenArray()">
+			Flatten Array
+		</button>
+		<div style="margin-top: 10px">Flattened List with given depth:-</div>
+		<div id="outputList"></div>
+	</body>
+	<script type="module" src="flattenArray.js"></script>
+</html>
